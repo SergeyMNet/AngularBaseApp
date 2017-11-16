@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppToolbarComponent {
 
+    @Output()
+    toPage1: EventEmitter<any> = new EventEmitter();
+
+    @Output()
+    toPage2: EventEmitter<any> = new EventEmitter();
 }

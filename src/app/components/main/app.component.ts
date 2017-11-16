@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  toPage1(){
+    console.log(1);
+  }
+
+  toPage2(){
+    console.log(2);
+  }
 }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCommonModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatIconModule } from '@angular/material';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -12,19 +12,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/main/app.component';
 import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
 import { AppFooterComponent } from './components/app-footer/app-footer.component';
-
+import { Page1Component } from './components/page1/page1.component';
+import { Page2Component } from './components/page2/page2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppToolbarComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    MatCommonModule
+    AppRoutingModule,    
+    MatToolbarModule, MatButtonModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
