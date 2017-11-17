@@ -1,7 +1,19 @@
-<mat-toolbar color="primary">    
-    <button mat-button (click)="toPage1.emit()"><mat-icon class="mat-18">home</mat-icon></button>
-    <button mat-button (click)="toPage1.emit()">Page1</button>
-    <button mat-button (click)="toPage2.emit()">Page2</button>
+<mat-toolbar color="primary" class="mat-elevation-z6" fxLayout="row wrap" fxLayoutAlign="space-between">
+    <div  fxLayout="row wrap" fxLayoutAlign="space-around center">
+        <button mat-button [routerLink]="['/page-1']"><mat-icon class="mat-18">home</mat-icon><span class="title">Main</span> </button>
+        <button mat-button [routerLink]="['/page-1']" [routerLinkActive]="['active_link']">Page1</button>
+        <button mat-button [routerLink]="['/page-2']" [routerLinkActive]="['active_link']">Page2</button>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around center"  fxFlexAlign="center">        
+        <div fxLayout="row wrap" fxLayoutAlign="space-around center" class="search-box">
+            <mat-icon>search</mat-icon>
+            <input class="serch_input" type="search" placeholder="search">
+        </div>        
+    </div>
+    <div  fxLayout="row wrap" fxLayoutAlign="space-around center">
+        <button mat-button [routerLink]="['/login']" [routerLinkActive]="['active_link']">Sing In</button>
+        <button mat-button [routerLink]="['/register']" [routerLinkActive]="['active_link']">Sing Up</button>
+    </div>
 </mat-toolbar>
 
 

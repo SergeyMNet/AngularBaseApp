@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 // material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatButtonModule, MatIconModule } from '@angular/material';
+import { CustomMaterialModule } from './material.module';
+
+// flex
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -26,8 +29,9 @@ import { Page2Component } from './components/page2/page2.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,    
-    MatToolbarModule, MatButtonModule, MatIconModule
+    AppRoutingModule,
+    FlexLayoutModule,    
+    CustomMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,30 @@
 // component css goes here
+.title{
+    padding: 10px;    
+}
+
+.search-box{
+    border-bottom: 1px solid white;
+
+    .serch_input{
+        background-color: transparent;
+        border: none;    
+        color: white;
+        width: 80%;
+    }
+    :focus{
+    outline-color: transparent;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+    color: white;
+    }
+}
