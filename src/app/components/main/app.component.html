@@ -2,7 +2,11 @@
 
 
 <div class="main-body">
-    <div>curent/url/title</div>
+    <p class="urls">
+        <a [routerLink]="['/page-1']" [routerLinkActive]="['active_link']">page-1</a>/
+        <a [routerLink]="['/page-1/page1-1']" [routerLinkActive]="['active_link']">1-1</a>/
+        <a [routerLink]="['/page-1/page1-1/page1-2']" [routerLinkActive]="['active_link']">1-2</a>
+    </p>
     <router-outlet></router-outlet>
 </div>
 

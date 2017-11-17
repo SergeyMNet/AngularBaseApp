@@ -18,13 +18,18 @@ import { AppFooterComponent } from './components/app-footer/app-footer.component
 import { Page1Component } from './components/page1/page1.component';
 import { Page2Component } from './components/page2/page2.component';
 
+import { Page1_1Component } from './components/page1/components/page1-1/page1-1.component';
+import { Page1_2Component } from './components/page1/components/page1-2/page1-2.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AppToolbarComponent,
     AppFooterComponent,
     Page1Component,
-    Page2Component
+    Page2Component,
+    Page1_1Component,
+    Page1_2Component
   ],
   imports: [
     BrowserModule,

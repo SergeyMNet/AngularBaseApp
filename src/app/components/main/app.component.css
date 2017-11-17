@@ -9,3 +9,12 @@
     margin-top: 44px;
     padding: 20px;
 }
+
+.urls a {
+    text-decoration: none;    
+}
+
+.active_link{
+    font-weight: 600;
+    color: blue;
+}
