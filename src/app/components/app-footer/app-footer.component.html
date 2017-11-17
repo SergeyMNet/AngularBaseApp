@@ -1,2 +1,20 @@
-<!--component html goes here -->
-<h4>footer</h4>
+
+
+<div class="footer-custom" background="primary" fxLayout="row wrap" fxLayoutAlign="space-between">
+    <div class="main-logo" fxLayout="column wrap" fxLayoutAlign="centerd">
+        <span><mat-icon class="main-ico">home</mat-icon></span>
+        <div>Logo</div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="centerd">
+        <h5>Navigation</h5>
+        <a [routerLink]="['/page-1']">Home</a>        
+        <a [routerLink]="['/page-1']">Page 1</a>
+        <a [routerLink]="['/page-2']">Page 2</a>
+    </div>
+    <div fxLayout="column">
+        <h5>Contact Information</h5>
+        <a>Zombie ipsum reversus</a>
+        <a>nam rick grimes malum </a>
+        <a>011 256 464 4879</a>
+    </div>
+</div>

@@ -1,1 +1,26 @@
-// component css goes here
+
+@import "../../../assets/variables.scss";
+
+.footer-custom{    
+    color: white;
+    background-color: $brand-primary;
+    padding: 20px;    
+    padding-top: 0px;
+    font-weight: 600;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-logo{
+    align-items: center;
+    text-align: center;
+}
+.main-logo div{
+    padding-left: 20px;
+}
+.main-ico{
+    font-size: 48px;
+    padding-top: 20px;
+}

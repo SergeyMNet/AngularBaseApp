@@ -1,0 +1,40 @@
+// Brands
+$brand-primary: #03a9f4;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger:  #bf5329;
+
+
+$brand-primary-pack: (
+    50: blue,
+    100: blue,
+    200: blue,
+    300: blue,
+    400: blue,
+    500: blue,
+    600: blue,
+    700: blue,
+    800: blue,
+    900: blue,
+    A100: blue,
+    A200: blue,
+    A400: blue,
+    A700: blue,
+    contrast: (
+      50: blue,
+      100: blue,
+      200: blue,
+      300: blue,
+      400: blue,
+      500:  blue,
+      600:  blue,
+      700:  blue,
+      800: blue,
+      900: blue,
+      A100: blue,
+      A200:  blue,
+      A400:  blue,
+      A700:  blue,
+    )
+  );
